@@ -41,16 +41,9 @@
 
     <script>
         function login() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            // التحقق من صحة اسم المستخدم وكلمة المرور (يمكنك تعديل هذا الجزء لاحقًا)
-            if (username === 'user' && password === 'password') {
-                localStorage.setItem('username', username);  // حفظ اسم المستخدم في التخزين المحلي
-                window.location.href = 'wheel.html';  // الانتقال لصفحة العجلة
-            } else {
-                alert("اسم المستخدم أو كلمة المرور غير صحيحة.");
-            }
+            // تخطي التحقق من اسم المستخدم وكلمة المرور
+            // فقط عند الضغط على الزر يتم الانتقال مباشرة إلى صفحة العجلة
+            window.location.href = 'wheel.html';  // الانتقال لصفحة العجلة مباشرة
         }
     </script>
 </body>
